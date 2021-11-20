@@ -1,0 +1,29 @@
+ifstream citire("bac.txt");
+
+int frec1[100], frec2[100];
+
+int main()
+{
+	int n, m;
+	cin>>n>>m;
+	for(int i=0; i<n; i++)
+	{
+		int nr;
+		cin>>nr;
+		frec1[nr]++;
+	}
+	for(int i=0; i<m; i++)
+	{
+		int nr;
+		cin>>nr;
+		frec2[nr]++;
+	}
+
+	int variante=0;
+	for(int i=0; i<100;  i++)
+		if(frec2[0]!=0)
+			if(nrs==0||frec1[i]/frec2[i]<nrs)
+				nrs=frec1[i]/frec2[i];
+	cout<<nrs;
+	return 0;
+}

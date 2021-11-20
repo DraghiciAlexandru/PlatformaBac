@@ -1,0 +1,28 @@
+int m[52][51], n;
+
+int main()
+{
+	
+	cin>>n;
+	for(int i=0; i<n; i++)
+		for(int j=0; j<n; j++)
+			cin>>m[i][j];
+	int mij=n/2+1;
+	for(int j=k; j<n-1; j++)
+		for(int i=0; i<n; i++)
+			m[i][j]=m[i][j+1];
+
+	for(int i=k; i<n-1; i++)
+		for(int j=0; j<n; j++)
+			m[i][j]=m[i+1][j];
+	
+	n--;
+	
+	for(int i=0; i<n; i++)
+	{
+		for(int j=0; j<n; j++)
+			cout<<m[i][j]<<" ";
+		cout<<endl;
+	}
+	return 0;
+}	

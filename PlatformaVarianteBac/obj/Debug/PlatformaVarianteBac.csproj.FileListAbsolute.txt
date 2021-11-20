@@ -1,0 +1,8 @@
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\bin\Debug\PlatformaVarianteBac.exe.config
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\bin\Debug\PlatformaVarianteBac.exe
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\bin\Debug\PlatformaVarianteBac.pdb
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.csprojAssemblyReference.cache
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.Properties.Resources.resources
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.csproj.GenerateResource.cache
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.exe
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.pdb

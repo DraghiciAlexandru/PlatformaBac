@@ -1,0 +1,23 @@
+void numar(int n, int &m)
+{
+	m=0;
+	int v[11], ct=0;
+	while(n)
+	{
+		if(n%2==1)
+		{
+			v[k]=n%10;
+			ct++;
+		}
+		n=n/10;
+	}
+	for(int i=0; i<ct-1; i++)
+		for(int j=i+1; j<ct; j++)
+			if(v[i]<v[j])
+				swap(v[i], v[j]);
+	for(int i=0; i<k; i++)
+		m=m*10+v[i];
+	if(m==0)
+		m=-1;
+}
+	

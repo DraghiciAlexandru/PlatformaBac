@@ -1,0 +1,28 @@
+char sir[101];
+char aux[101];
+char *p;
+
+int maxim;
+
+int main()
+{
+	cin>>sir;
+	strcpy(aux, sir);
+	p=strtok(sir, '#');
+	while(p)
+	{
+		if(strlen(p)>maxim)
+			maxim=strlen(p);
+		p=strtok(NULL,'#');
+	}
+	p=strtok(aux, '#');
+	while(p)
+	{
+		if(strlen(p)==maxim)
+			strrev(p);
+		cout<<"#"<<p;
+		p=strtok(NULL, "#");
+	}
+	cout<<"#";
+	return 0;
+}

@@ -1,0 +1,24 @@
+ifstream citire("bac.txt");
+
+int main()
+{
+	int a, b, lmax=0, l=1;
+	citire>>a;
+	while(cin>>b)
+	{
+		int primC=y;
+		while(primC>9)
+			primC=primC/10;
+		if(primC==a%10)
+			l++;
+		else
+		{
+			if(l>lmax)
+				lmax=lg;
+			lg=1;
+		}
+		a=b;
+	}
+	cout<<lmax;
+	return 0;
+}

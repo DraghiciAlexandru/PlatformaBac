@@ -1,0 +1,29 @@
+ifstream citire("bac.txt");
+
+int prim(int nr)
+{
+	if(nr<=1)
+		return 0;
+	for(int i=2; i<=nr/2; i++)
+		if(nr%i==0)
+			return 0;
+	return 1;
+}
+
+int main()
+{
+	int nr, maxim=0;
+ 	while(cin>>nr)
+	{
+		int ct=0;
+		while(prim(nr)==0)
+		{
+			ct+;
+			nr++;
+		}
+		if(ct+1>maxim)
+			maxim=ct+1;
+	}
+	cout<<maxim;
+	return 0;
+}
