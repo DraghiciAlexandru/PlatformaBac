@@ -1,0 +1,18 @@
+ifstream fin("bac.txt");
+int x, p, a;
+
+int main()
+{
+	fin>>p;
+	while(fin>>x)
+	{
+		if((x-p*(p+1)/2)%p==0)
+		{
+			a=(x-p*(p+1)/2)/p;
+			cout<<a+1<<" ";
+		}
+		else
+			cout<<"NU"<<" ";
+	}
+	return 0;
+}

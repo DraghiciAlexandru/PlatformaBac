@@ -1,0 +1,58 @@
+ifstream fin("bac.txt");
+
+int x, fr[10], exista, majloc, p, n;
+
+int main()
+{
+	fin>>n;
+	for(int i=0; i<n; i++)
+	{
+		fr[x]++;
+		if(x>0 && x%2==0 && fr[x]>=2)
+			exista=1;
+	}
+	if(exista)
+	{
+		for(int i=8; i>=2; i=i-2)
+			if(fr[i]>=2)
+			{
+				p=i;
+				fr[i]=fr[i]-2;
+				break;
+			}
+		mijloc=-1;
+		for(int i=9; i>=1; i--)
+			if(fr[i]%2==1)
+				if(mijloc==-1)
+				{
+					mijloc=i;
+				}
+				else
+				{
+					exista=0;
+					break;
+				}
+	}
+	if(exista)
+	{
+		cout<<p;
+		for(int i=9; i>=1; i--)
+		{
+			for(int j=1; j<=fr[i]/2; j++)
+				cout<<i;
+		}
+		if(mijloc!=-1)
+			cout<<mijloc);
+		for(int i=1; i<10; i++)
+		{
+			for(int j=1; j<=fr[i]/2; j++)
+				cout<<i;
+		}
+		cout<<p;
+	}
+	if(!exista)
+		cout<<-1;
+	return 0;
+}
+	
+	

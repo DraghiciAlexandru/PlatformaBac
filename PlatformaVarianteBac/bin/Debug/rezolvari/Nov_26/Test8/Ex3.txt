@@ -1,0 +1,26 @@
+ifstream fin("bac.txt");
+
+int x, zmax, nrzmax, nrz;
+
+int main()
+{
+	while(fin>>x)
+	{
+		nrz=0;
+		while(x)
+		{
+			nrz=nrz+x/5;
+			x=x/5;
+		}
+		if(nrz>nrzmax)
+		{
+			nrzmax=nrz;
+			zmax=1;
+		}
+		else
+			if(nrz==nrzmax)
+				zmax++;
+	}
+	cout<<zmax<<" "<<nrzmax;
+	return 0;
+}

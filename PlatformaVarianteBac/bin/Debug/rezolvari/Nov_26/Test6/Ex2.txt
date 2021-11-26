@@ -1,0 +1,17 @@
+int divizori(int n, int a[])
+{
+	int d, i, x, y, r;
+	for(i=2; i<=n; i++)
+	{
+		x=d;
+		y=a[i];
+		while(y)
+		{
+			r=x%y;
+			x=y;
+			y=r;
+		}
+		d=x;
+	}
+	return d;
+}

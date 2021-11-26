@@ -1,0 +1,23 @@
+int divizor(int n)
+{
+	int d=2, p=1, k, cn=n;
+	d=2;
+	while(d*d<=n)
+	{
+		if(n%d==0)
+		{
+			k=0;
+			while(n%d==0)
+			{
+				k++;
+				n=n/d;
+			}
+			if(k%2==1)
+				p=p*d;
+		}
+		d++;
+	}
+	if(n>1)
+		p=p*n;
+	return cn/p;
+}

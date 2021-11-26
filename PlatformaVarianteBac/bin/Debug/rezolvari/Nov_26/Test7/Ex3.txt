@@ -1,0 +1,21 @@
+ifstream fin("bac.in");
+ofstream fout("bac.out");
+
+int vf[10];
+int x, p;
+
+int main()
+{
+	while(fin>>x)
+	{
+		p=log10(x);
+		vf[p]++;
+	}
+	for(int i=0; i<10; i++)
+		while(vf[i])
+		{
+			fout<<pow(10, i)<<" ";
+			vf[i]--;
+		}
+	return 0;
+}

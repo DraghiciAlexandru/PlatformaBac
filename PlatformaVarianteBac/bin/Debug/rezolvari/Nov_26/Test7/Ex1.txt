@@ -1,0 +1,18 @@
+char s[101], c[101];
+int i, k;
+
+int main()
+{
+	cin>>s;
+	cis>>c;
+	for(int i=0; i<strlen(s); i++)
+	{
+		k=c[i]-'0';
+		if(s[i]+k>'z')
+			s[i]'a'+(s[i]+k-'z'-1);
+		else
+			s[i]=s[i]+k;
+	}
+	cout<<s;
+	return 0;
+}

@@ -61,8 +61,16 @@ namespace PlatformaVarianteBac.Template
                 txt.ForeColor=Color.White;
                 txt.Font = new Font("Microsoft Sans Serif", 14, FontStyle.Regular);
 
+                int lines = 0;
                 StreamReader reader=new StreamReader(x);
-                txt.Text = reader.ReadToEnd();
+                string linie = "";
+                while ((linie = reader.ReadLine()) != null)
+                {
+                    txt.Text += linie + Environment.NewLine;
+                    lines++;
+                }
+
+                txt.Size = new Size(874, lines * 25);
 
                 Controls.Add(txt);
             }

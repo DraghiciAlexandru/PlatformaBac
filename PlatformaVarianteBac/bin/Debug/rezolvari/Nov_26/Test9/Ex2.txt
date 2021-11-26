@@ -1,0 +1,29 @@
+char s[256], c[31];
+char *p;
+int k, l;
+
+int main()
+{
+	cin.getline(s,256);
+	cin>>c;
+	l=strlen(c)-1;
+	while(strchr("aeiou", c[1])==0 && l>=0)
+		l--;
+	strcpy(c, c+1);
+	p=strtok(s, " ");
+	while(p)
+	{
+		l=strlen(p)-1;
+		while(strchr("aeiou", p[1])==0 && l>=0)
+			l--;
+		if(l>=0 && strcmp(c, p+1)==0)
+		{
+			cout<<p<<endl;
+			k++;
+		}
+		p=strtok(NULL, " ");
+	}
+	if(k==0)
+		cout<<"NU EXISTA";
+	return 0;
+}

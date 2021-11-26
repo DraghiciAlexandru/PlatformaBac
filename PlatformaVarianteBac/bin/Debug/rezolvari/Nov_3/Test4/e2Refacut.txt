@@ -1,0 +1,41 @@
+//Subiectul II exercitiu 2
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+struct Punct
+{
+	float x, y;
+};
+
+struct Poligon
+{
+	int nr;
+	Punct v[101];
+}p;
+
+int n;
+float per = 0;
+
+float distanta(Punct p1, Punct p2)
+{
+	return sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
+}
+
+int main()
+{
+	n = 3;
+	p.v[0] = Punct{ 0, 0 };
+	p.v[1] = Punct{ 0, 1 };
+	p.v[2] = Punct{ 1, 0 };
+	
+	for(int i=0; i<n; i++)
+	{
+		per += distanta(p.v[i], p.v[i + 1]);
+	}
+	per += distanta(p.v[n], p.v[0]);
+
+	cout << per;
+}

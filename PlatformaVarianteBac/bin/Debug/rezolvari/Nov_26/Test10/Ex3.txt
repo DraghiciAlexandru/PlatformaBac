@@ -1,0 +1,25 @@
+ifstream fin("bac.txt");
+int x, fr[32], p, k, frmax;
+
+int main()
+{
+	while(fin>>x)
+	{
+		p=1;
+		k=0;
+		while(p*2<=x)
+		{
+			p*=2;
+			k++;
+		}
+		fr[k]++;
+	}
+	for(int i=0; i<32; i++)
+		if(fr[i]>=frmax)
+		{
+			frmax=fr[i];
+			k=i;
+		}
+	cout<<k;
+	retunr 0;
+}
