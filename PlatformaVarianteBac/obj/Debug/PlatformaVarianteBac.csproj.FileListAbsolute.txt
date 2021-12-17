@@ -6,3 +6,4 @@ D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debu
 D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.csproj.GenerateResource.cache
 D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.exe
 D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.pdb
+D:\MyCode\C#\UIdesign\Dinamic\PlatformaVarianteBac\PlatformaVarianteBac\obj\Debug\PlatformaVarianteBac.View.FrmView.resources

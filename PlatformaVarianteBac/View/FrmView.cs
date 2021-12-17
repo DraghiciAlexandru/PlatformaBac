@@ -144,7 +144,7 @@ namespace PlatformaVarianteBac.View
             lblPage.Size = new Size(200, 50);
             lblPage.TextAlign = ContentAlignment.MiddleCenter;
 
-            lblPage.Text = "Varante bac";
+            lblPage.Text = "Variante bac";
 
             lblPage.Font = new Font("Microsoft Sans Serif", 22, FontStyle.Bold);
 
@@ -211,5 +211,22 @@ namespace PlatformaVarianteBac.View
             this.Close();
         }
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // FrmView
+            // 
+            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.Name = "FrmView";
+            this.Load += new System.EventHandler(this.FrmView_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void FrmView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
