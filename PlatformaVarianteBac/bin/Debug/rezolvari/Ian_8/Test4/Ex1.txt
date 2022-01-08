@@ -1,0 +1,15 @@
+int main()
+{
+	char sir[201], aux[201];
+	cin.getline(sir, 101);
+	for(int i=0; i<strlen(sir)-1; i++)
+		if(sir[i]==sir[i+1])
+		{
+			strcpy(aux, sir+i+1);
+			s[i+1]='#';
+			strcpy(sir+i+2, aux);
+			i++;
+		}
+	cout<<sir;
+	return 0;
+}
